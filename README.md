@@ -5,6 +5,8 @@ annascii
 
 **annascii** is a Python tool that converts images into ASCII art using an approximate nearest neighbor (ANN) search powered by [Annoy](https://github.com/spotify/annoy). It features a Tkinter-based graphical interface to control rendering settings such as output size, font size, tile and glyph size, and the character set used.
 
+![Screenshot](screen1.png)
+
 Features
 --------
 
@@ -12,7 +14,6 @@ Features
 *   🎨 Edge detection preprocessing using OpenCV
 *   🔤 Fully customizable ASCII character set
 *   🔠 Adjustable font size and glyph rendering dimensions
-*   🧱 Tile-based image processing
 *   🖼️ Tkinter GUI for live configuration and output preview
 
 Installation

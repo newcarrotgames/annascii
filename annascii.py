@@ -1,12 +1,9 @@
 import os
-import sys
 import re
-import requests
 import cv2
 import numpy as np
 from annoy import AnnoyIndex
 from PIL import Image, ImageDraw, ImageFont, ImageOps
-from io import BytesIO
 import tkinter as tk
 from tkinter import filedialog, ttk
 
@@ -123,7 +120,7 @@ class ANNASCIIUI:
         ttk.Entry(self.frame, textvariable=self.font_size).grid(row=4, column=1, sticky="ew")
 
         ttk.Label(self.frame, text="ASCII Characters:").grid(row=5, column=0, sticky="nw")
-        self.ascii_chars = tk.StringVar(value=" .,:;!~+_-<>|\/\"^'-")
+        self.ascii_chars = tk.StringVar(value=" .,:;!~+_-<>|\\/\"^'-")
         ttk.Entry(self.frame, textvariable=self.ascii_chars, width=50).grid(row=5, column=1, sticky="ew")
 
         ttk.Button(self.frame, text="Generate ASCII", command=self.generate_ascii).grid(row=6, column=0, columnspan=2, sticky="ew")
